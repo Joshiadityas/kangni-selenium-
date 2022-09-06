@@ -1,0 +1,72 @@
+{
+  "id": "ed423be2-fa80-4ee7-a2e3-e831ae5ce195",
+  "version": "2.0",
+  "name": "DemoBlaze",
+  "url": "https://www.demoblaze.com/",
+  "tests": [{
+    "id": "bf5e6a35-4c31-45de-a585-f71ce3e3370a",
+    "name": "TC_001",
+    "commands": [{
+      "id": "7ff91ae7-eb44-402c-87d2-661d2f4f263e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe49a52f-4c31-47dc-8e61-5cc827286fcd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1078x828",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aec36e6b-6354-473d-94c0-57c01394bbfe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About us",
+      "targets": [
+        ["linkText=About us", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'About us')]", "xpath:link"],
+        ["xpath=//div[@id='navbarExample']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db1b7b72-1d69-4b80-8467-4598c673b62c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#videoModal .modal-header span",
+      "targets": [
+        ["css=#videoModal .modal-header span", "css:finder"],
+        ["xpath=//div[@id='videoModal']/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa752cf-a23a-4ed3-bd8f-7806176a08a1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "223eb04d-798e-40fa-b925-e2cfaed3d70e",
+    "name": "Demoblaze",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "c77ab9c6-dc49-41c2-a45c-efb0e4fd741a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bf5e6a35-4c31-45de-a585-f71ce3e3370a"]
+  }],
+  "urls": ["https://razer.free.beeceptor.com/", "https://www.demoblaze.com/"],
+  "plugins": []
+}
